@@ -29,11 +29,11 @@ A buried sensing approach addresses this, but wireless communication becomes dif
 
 ## System Architecture
 
-![System Overview](assets/diagrams/full_system_overview.png)
-
 ![Sensing Unit](assets/diagrams/sensing_unit_architecture.png)
 
 ![Gateway](assets/diagrams/gateway_architecture.png)
+
+![System Overview](assets/diagrams/full_system_overview.png)
 
 **Sensing Unit -> LoRa/Sub-GHz -> Gateway -> Cellular -> Cloud**
 
