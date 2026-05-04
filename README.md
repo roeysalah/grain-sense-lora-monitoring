@@ -11,10 +11,10 @@ Originally developed as an Electrical Engineering coursework project, it was ext
 
 From an engineering standpoint, this repository is a useful slice of a real wireless sensing product:
 
-- **Harsh RF environment** — grain is lossy and time-varying; link margin and packet loss are first-class design inputs, not afterthoughts.
-- **Severe battery constraints** — nodes must run for years with sparse reporting; every wake-up, sensor on-time, and airtime has a cost.
-- **System-level tradeoffs** — range, data rate, duty cycle, regulatory limits, and cloud semantics must stay coherent across firmware, air interface, and gateway policy.
-- **Real-world IoT challenges** — identity, multi-site filtering, integrity checks, and operational observability (e.g. link quality) mirror what production teams solve daily.
+- **Harsh RF environment** - grain is lossy and time-varying; link margin and packet loss are first-class design inputs, not afterthoughts.
+- **Severe battery constraints** - nodes must run for years with sparse reporting; every wake-up, sensor on-time, and airtime has a cost.
+- **System-level tradeoffs** - range, data rate, duty cycle, regulatory limits, and cloud semantics must stay coherent across firmware, air interface, and gateway policy.
+- **Real-world IoT challenges** - identity, multi-site filtering, integrity checks, and operational observability (e.g. link quality) mirror what production teams solve daily.
 
 ## Problem Background
 
@@ -66,11 +66,11 @@ A buried sensing approach addresses this, but wireless communication becomes dif
 
 ## What Makes This Project Unique
 
-- **Embedded plus systems** — firmware, radio framing, and gateway policy are designed as one coherent story, not isolated demos.
-- **RF-aware, not lab-ideal** — attenuation and margin are treated as constraints that drive protocol and simulator behavior.
-- **Gateway intelligence** — validation and link analysis live where operational decisions naturally occur (at the edge).
-- **Honest tradeoffs** — power, airtime, retries, and identity fields are discussed with engineering specificity rather than buzzwords.
-- **Interview-ready artifacts** — clear module boundaries, a defined wire format, and documentation that supports deep technical discussion.
+- **Embedded plus systems** - firmware, radio framing, and gateway policy are designed as one coherent story, not isolated demos.
+- **RF-aware, not lab-ideal** - attenuation and margin are treated as constraints that drive protocol and simulator behavior.
+- **Gateway intelligence** - validation and link analysis live where operational decisions naturally occur (at the edge).
+- **Honest tradeoffs** - power, airtime, retries, and identity fields are discussed with engineering specificity rather than buzzwords.
+- **Interview-ready artifacts** - clear module boundaries, a defined wire format, and documentation that supports deep technical discussion.
 
 ## Repository Structure
 
@@ -199,10 +199,10 @@ Recommendation: Increase spreading factor (SF10-SF11); consider increasing TX po
 
 ## Design Tradeoffs
 
-- **Why LoRa** — strong fit for long-range, high-attenuation links at very low average power when payloads are small and infrequent.
-- **Why STM32WL** — integrated application MCU and Sub-GHz radio reduces interconnect complexity and supports tighter low-leakage sleep integration than many two-chip designs.
-- **Why SHT40** — digital RH/T with good drift characteristics and a short measurement window, which pairs well with bursty duty cycles.
-- **Why star topology** — simplest operational model for disposable buried nodes: one authoritative gateway per site enforces policy and backhaul.
+- **Why LoRa** - strong fit for long-range, high-attenuation links at very low average power when payloads are small and infrequent.
+- **Why STM32WL** - integrated application MCU and Sub-GHz radio reduces interconnect complexity and supports tighter low-leakage sleep integration than many two-chip designs.
+- **Why SHT40** - digital RH/T with good drift characteristics and a short measurement window, which pairs well with bursty duty cycles.
+- **Why star topology** - simplest operational model for disposable buried nodes: one authoritative gateway per site enforces policy and backhaul.
 
 ## Future Improvements
 
