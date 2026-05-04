@@ -3,8 +3,8 @@
 ![Language](https://img.shields.io/badge/language-C%20%7C%20Python-blue)
 ![Platform](https://img.shields.io/badge/platform-Embedded%20%7C%20IoT-green)
 
-GrainSense is a system-level prototype for long-term environmental monitoring inside grain storage piles.  
-It combines low-power embedded firmware, a compact uplink protocol, and a gateway-side validation and simulation pipeline.  
+GrainSense is a system - level prototype for long - term environmental monitoring inside grain storage piles.  
+It combines low-power embedded firmware, a compact uplink protocol, and a gateway - side validation and simulation pipeline.  
 Originally developed as an Electrical Engineering coursework project, it was extended to reflect how a field-deployable IoT product would be structured and reasoned about.
 
 ## Why This Project Matters
