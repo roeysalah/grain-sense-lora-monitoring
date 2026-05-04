@@ -1,0 +1,18 @@
+flowchart TB
+  subgraph node [Sensor node STM32WL]
+    RTC[RTC wakeup 12h]
+    SNS[SHT40 sample]
+    TX[LoRa TX payload]
+    RTC --> SNS --> TX
+  end
+  subgraph gw [Warehouse gateway]
+    RF[Sub-GHz RX]
+    FILT[Filter CRC roster IDs]
+    CELL[Cellular uplink]
+    RF --> FILT --> CELL
+  end
+  subgraph cloud [Cloud]
+    DB[(Telemetry store)]
+  end
+  node -->|868 MHz LoRa| RF
+  CELL -->|MQTT TLS| DB

@@ -1,0 +1,6 @@
+{
+  "_comment": "Gateway provisioning for the simulator: IDs must match uplink packets and firmware app_config.h when testing end-to-end.",
+  "gateway_id": 49153,
+  "warehouse_id": 55041,
+  "authorized_unit_ids": [3, 22, 91, 42241, 42242]
+}
